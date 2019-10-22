@@ -15,7 +15,6 @@ function Footer() {
   return (
     <div className='footer'>
       <h5>Written by Rick Brown. © {new Date().getFullYear()}</h5>
-      <h6>View this code on GitHub</h6>
     </div>
   )
 }
@@ -54,18 +53,18 @@ function App() {
         <Header />
         {data ? (
           <>
-            <h5>
+            <h4>
               The string the bank require has been copied to the clipboard!
-            </h5>
-            <h5>
-              To use, open a new, blank text file, and paste the clipboard (CTRL
-              + V)
-            </h5>
-            <h5>To generate another string, just refresh the browser.</h5>
+            </h4>
+            <h4>
+              To use, open a new, blank text file, and paste to the clipboard (⌘
+              + V / CTRL + V)
+            </h4>
+            <h4>To generate another string, just refresh the browser.</h4>
           </>
         ) : (
           <>
-            <h5>Please import an .xlsx file</h5>
+            <h3>Please import an .xlsx file</h3>
             <button
               className='btn'
               onClick={() => inputFile.current.click()}
